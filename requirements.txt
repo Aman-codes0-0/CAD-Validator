@@ -1,0 +1,10 @@
+streamlit
+trimesh[all]
+numpy
+pandas
+scikit-learn
+joblib
+reportlab
+plotly
+ezdxf
+xgboost
