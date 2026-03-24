@@ -44,12 +44,27 @@ source .venv/bin/activate
 
 ## 🖥️ How to Run the App
 
-Once your environment is active, start the Streamlit server:
+1.  **Activate the Environment**:
+    ```bash
+    source venv/bin/activate
+    ```
+2.  **Run the Streamlit Dashboard**:
+    ```bash
+    streamlit run app.py
+    ```
+    Once started, the app will be live at `http://localhost:8501`.
+
+---
+
+## 🛠️ Critical System Prerequisites (Linux)
+
+To ensure **DWG files** are processed correctly without errors, you **must** install the following .NET dependencies on your system. Run this once in your terminal:
 
 ```bash
-streamlit run app.py
+sudo apt-get update && sudo apt-get install -y libicu-dev libgdiplus
 ```
-The application will open in your default browser at `http://localhost:8501`.
+
+*Without these, DWG conversion will fail, but you can still use DXF, STL, and OBJ formats.*
 
 ---
 
